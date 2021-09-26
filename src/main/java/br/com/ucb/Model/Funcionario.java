@@ -1,13 +1,7 @@
 package br.com.ucb.Model;
 
-import javax.persistence.*;
-import java.util.Date;
-
-@Entity
-@Table(name="Funcionarios")
+//Gustavo
 public abstract class Funcionario {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
     private String cpf;
