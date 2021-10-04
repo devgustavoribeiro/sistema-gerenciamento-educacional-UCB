@@ -1,19 +1,25 @@
 package br.com.ucb.Controller;
 
 public enum AnoEscolar {
-    PRIMEIRO_ANO_EF,
-    SEGUNDO_ANO_EF,
-    TERCEIRO_ANO_EF,
-    QUARTO_ANO_EF,
 
-    QUINTO_ANO_EF,
-    SEXTO_ANO_EF,
-    SETIMO_ANO_EF,
-    OITAVO_ANO_EF,
-    NONO_ANO_EF,
+    PRIMEIRO_ANO_EF(1),
+    SEGUNDO_ANO_EF(2),
+    TERCEIRO_ANO_EF(3),
+    QUARTO_ANO_EF(4),
 
-    PRIMEIRO_ANO_EM,
-    SEGUNDO_ANO_EM,
-    TERCEIRO_ANO_EM
+    QUINTO_ANO_EF(5),
+    SEXTO_ANO_EF(6),
+    SETIMO_ANO_EF(7),
+    OITAVO_ANO_EF(8),
+    NONO_ANO_EF(9),
 
+    PRIMEIRO_ANO_EM(10),
+    SEGUNDO_ANO_EM(11),
+    TERCEIRO_ANO_EM(12);
+
+    public int numeroAnoEscolar;
+    AnoEscolar(int num) {
+        numeroAnoEscolar = num;
+
+    }
 }

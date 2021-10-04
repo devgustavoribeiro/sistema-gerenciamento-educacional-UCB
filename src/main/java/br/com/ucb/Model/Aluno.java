@@ -2,20 +2,34 @@ package br.com.ucb.Model;
 
 // Gustavo
 
+import br.com.ucb.Controller.AnoEscolar;
+import br.com.ucb.Controller.StatusAluno;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Scanner;
+
 public class Aluno {
+
     private Integer id;
     private String nome;
     private String cpf;
     private String dataNascimento;
-    private Enum anoEscolar;
     private String email;
+    private String anoEscolar;
+    private String statusAluno;
 
-    public Aluno(String nome, String cpf, String dataNascimento, Enum anoEscolar, String email) {
+    ArrayList<Aluno> matriculas = new ArrayList<Aluno>();
+
+    public Aluno(Integer id, String nome, String cpf, String dataNascimento, String email, String anoEscolar, String statusAluno) {
+        this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
-        this.anoEscolar = anoEscolar;
         this.email = email;
+        this.anoEscolar = anoEscolar;
+        this.statusAluno = statusAluno;
     }
 
     public Integer getId() {
@@ -50,13 +64,6 @@ public class Aluno {
         this.dataNascimento = dataNascimento;
     }
 
-    public Enum getAnoEscolar() {
-        return anoEscolar;
-    }
-
-    public void setAnoEscolar(Enum anoEscolar) {
-        this.anoEscolar = anoEscolar;
-    }
 
     public String getEmail() {
         return email;
@@ -66,5 +73,25 @@ public class Aluno {
         this.email = email;
     }
 
+    public String getAnoEscolar() {
+        return anoEscolar;
+    }
 
+    public void setAnoEscolar(String anoEscolar) {
+        this.anoEscolar = anoEscolar;
+    }
+
+    public String getStatusAluno() {
+        return statusAluno;
+    }
+
+    public void setStatusAluno(String statusAluno) {
+        this.statusAluno = statusAluno;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Aluno{" + "id=" + id + ", nome='" + nome + '\'' + ", cpf='" + cpf + '\'' + ", dataNascimento='" + dataNascimento + '\'' + ", email='" + email + '\'' + ", anoEscolar='" + anoEscolar + '\'' + ", statusAluno='" + statusAluno + '\'' + '}';
+    }
 }
