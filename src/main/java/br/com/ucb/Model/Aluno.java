@@ -2,13 +2,7 @@ package br.com.ucb.Model;
 
 // Gustavo
 
-import br.com.ucb.Controller.AnoEscolar;
-import br.com.ucb.Controller.StatusAluno;
-
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Scanner;
 
 public class Aluno {
 

@@ -8,9 +8,10 @@ public abstract class Funcionario {
     private String email;
     private String telefone;
     private String dataNascimento;
-    private Enum tipoFuncionario;
+    private String tipoFuncionario;
 
-    public Funcionario(String nome, String cpf, String email, String telefone, String dataNascimento, Enum tipoFuncionario) {
+    public Funcionario(Integer id, String nome, String cpf, String email, String telefone, String dataNascimento, String tipoFuncionario) {
+        this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
@@ -67,11 +68,11 @@ public abstract class Funcionario {
         this.dataNascimento = dataNascimento;
     }
 
-    public Enum getTipoFuncionario() {
+    public String getTipoFuncionario() {
         return tipoFuncionario;
     }
 
-    public void setTipoFuncionario(Enum tipoFuncionario) {
+    public void setTipoFuncionario(String tipoFuncionario) {
         this.tipoFuncionario = tipoFuncionario;
     }
 }
