@@ -82,7 +82,7 @@ public class AlunoController extends GeradorID{
         }
     }
 
-    public void escolheAno(){
+    public String escolheAno(){
 
         int escolha = sc.nextInt();
         switch(escolha){
@@ -127,12 +127,14 @@ public class AlunoController extends GeradorID{
 
         }
 
+        return anoEscolhido;
+
 
     }
 
-    public void escolheTurno(){
-        String turno;
-        int escolha = sc.nextInt();
+    public String escolheTurno(){
+
+        Integer escolha = sc.nextInt();
         switch(escolha){
             case 1:
                 turno = Turnos.MATUTINO.toString();
@@ -142,6 +144,7 @@ public class AlunoController extends GeradorID{
                 break;
 
         }
+        return turno;
     }
 
     public void excluirAluno(){

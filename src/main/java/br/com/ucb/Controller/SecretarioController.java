@@ -14,6 +14,7 @@ public class SecretarioController {
     }
 
     public void cadastrarTurma(){
+        tc.cadastrarTurma();
 
     }
 
@@ -23,6 +24,7 @@ public class SecretarioController {
     }
 
     public void exibirTurmas(){
+        tc.exibirTurmas();
 
     }
 
