@@ -3,6 +3,7 @@ package br.com.ucb.Model;
 //Gustavo
 public abstract class Funcionario {
     private Integer id;
+    private Integer matricula;
     private String nome;
     private String cpf;
     private String email;
@@ -10,8 +11,9 @@ public abstract class Funcionario {
     private String dataNascimento;
     private String tipoFuncionario;
 
-    public Funcionario(Integer id, String nome, String cpf, String email, String telefone, String dataNascimento, String tipoFuncionario) {
+    public Funcionario(Integer id, Integer matricula, String nome, String cpf, String email, String telefone, String dataNascimento, String tipoFuncionario) {
         this.id = id;
+        this.matricula = matricula;
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
@@ -26,6 +28,14 @@ public abstract class Funcionario {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(Integer matricula) {
+        this.matricula = matricula;
     }
 
     public String getNome() {

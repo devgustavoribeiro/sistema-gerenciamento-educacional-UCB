@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public class Aluno {
 
     private Integer id;
+    private Integer matricula;
     private String nome;
     private String cpf;
     private String dataNascimento;
@@ -16,8 +17,9 @@ public class Aluno {
 
     ArrayList<Aluno> matriculas = new ArrayList<Aluno>();
 
-    public Aluno(Integer id, String nome, String cpf, String dataNascimento, String email, String anoEscolar, String statusAluno) {
+    public Aluno(Integer id, Integer matricula, String nome, String cpf, String dataNascimento, String email, String anoEscolar, String statusAluno) {
         this.id = id;
+        this.matricula = matricula;
         this.nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
@@ -32,6 +34,14 @@ public class Aluno {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(Integer matricula) {
+        this.matricula = matricula;
     }
 
     public String getNome() {

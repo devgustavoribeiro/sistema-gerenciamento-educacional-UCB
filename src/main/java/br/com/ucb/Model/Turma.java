@@ -6,21 +6,21 @@ import java.util.ArrayList;
 public class Turma {
 
    private Integer id;
-   private Integer anoEscolar;
-   private Integer turno;
-   private Funcionario professor;
+   private String anoEscolar;
+   private String turno;
+   private String professor;
    private Integer qtdAlunos;
-   private Aluno alunos;
 
-   ArrayList<Turma> turmas = new ArrayList<Turma>();
 
-   public Turma(Integer id, Integer anoEscolar, Integer turno, Funcionario professor, Integer qtdAlunos, Aluno alunos) {
+   ArrayList<Turma> turma = new ArrayList<Turma>();
+
+   public Turma(Integer id, String anoEscolar, String turno, String professor, Integer qtdAlunos) {
       this.id = id;
       this.anoEscolar = anoEscolar;
       this.turno = turno;
       this.professor = professor;
       this.qtdAlunos = qtdAlunos;
-      this.alunos = alunos;
+
    }
 
    public Integer getId() {
@@ -31,27 +31,27 @@ public class Turma {
       this.id = id;
    }
 
-   public Integer getAnoEscolar() {
+   public String getAnoEscolar() {
       return anoEscolar;
    }
 
-   public void setAnoEscolar(Integer anoEscolar) {
+   public void setAnoEscolar(String anoEscolar) {
       this.anoEscolar = anoEscolar;
    }
 
-   public Integer getTurno() {
+   public String getTurno() {
       return turno;
    }
 
-   public void setTurno(Integer turno) {
+   public void setTurno(String turno) {
       this.turno = turno;
    }
 
-   public Funcionario getProfessor() {
+   public String getProfessor() {
       return professor;
    }
 
-   public void setProfessor(Funcionario professor) {
+   public void setProfessor(String professor) {
       this.professor = professor;
    }
 
@@ -63,17 +63,11 @@ public class Turma {
       this.qtdAlunos = qtdAlunos;
    }
 
-   public Aluno getAlunos() {
-      return alunos;
-   }
 
-   public void setAlunos(Aluno alunos) {
-      this.alunos = alunos;
-   }
 
    @Override
    public String toString() {
-      return "Turma{" + "id=" + id + ", anoEscolar='" + anoEscolar + '\'' + ", turno='" + turno + '\'' + ", professor='" + professor + '\'' + ", qtdAlunos='" + qtdAlunos + '\'' + ", alunos='" + alunos + '\'' + '}';
+      return "Turma{" + "id=" + id + ", anoEscolar='" + anoEscolar + '\'' + ", turno='" + turno + '\'' + ", professor='" + professor + '\'' + ", qtdAlunos='" + qtdAlunos + '\'';
    }
 
 }

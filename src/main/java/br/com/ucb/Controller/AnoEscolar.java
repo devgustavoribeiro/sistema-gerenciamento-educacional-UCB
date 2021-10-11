@@ -18,5 +18,7 @@ public enum AnoEscolar {
     TERCEIRO_ANO_EM(12);
 
     public int numeroAnoEscolar;
-    AnoEscolar(int num) {numeroAnoEscolar = num;}
+    AnoEscolar(int num) {
+        numeroAnoEscolar = num;
+    }
 }

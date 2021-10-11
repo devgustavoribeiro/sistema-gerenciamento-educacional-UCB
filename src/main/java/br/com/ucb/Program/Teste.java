@@ -25,13 +25,13 @@ public class Teste {
 
             switch (op) {
                 case 1:
-                    ac.matricular();
+                    ac.matricularAluno();
                     break;
                 case 2:
                     ac.listarEstudantes();
                     break;
                 case 3:
-                    pc.cadastrar();
+                    pc.cadastrarProfessor();
                     break;
                 case 4:
                     pc.listarProfessores();

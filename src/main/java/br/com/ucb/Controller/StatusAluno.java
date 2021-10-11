@@ -4,10 +4,11 @@ public enum StatusAluno {
     ATIVO(1),
     CURSANDO(2),
     APROVADO(3),
-    REPROVADO(4);
+    REPROVADO(4),
+    INATIVO (5);
 
-    private int numeroStatus;
+
     StatusAluno(int valor) {
-        numeroStatus = valor;
+        valor = valor;
     }
 }
