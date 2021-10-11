@@ -58,7 +58,6 @@ public class Aluno {
         this.dataNascimento = dataNascimento;
     }
 
-
     public String getEmail() {
         return email;
     }
