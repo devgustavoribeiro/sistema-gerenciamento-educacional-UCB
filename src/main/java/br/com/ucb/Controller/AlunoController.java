@@ -38,18 +38,17 @@ public class AlunoController {
 
     public void listarEstudantes(){
         for(int i=0; i<alunosMatriculados.size(); i++){
-            System.out.print(alunosMatriculados.get(i).getId());
-            System.out.println(alunosMatriculados.get(i).getNome());
-            System.out.println(alunosMatriculados.get(i).getCpf());
-            System.out.println(alunosMatriculados.get(i).getDataNascimento());
-            System.out.println(alunosMatriculados.get(i).getEmail());
-            System.out.println(alunosMatriculados.get(i).getAnoEscolar());
-            System.out.println(alunosMatriculados.get(i).getStatusAluno());
+            System.out.print(("ID = ") + alunosMatriculados.get(i).getId() + '\n');
+            System.out.println(("Nome = ") + alunosMatriculados.get(i).getNome());
+            System.out.println(("CPF = ") + alunosMatriculados.get(i).getCpf());
+            System.out.println(("Data de Nascimento = ") + alunosMatriculados.get(i).getDataNascimento());
+            System.out.println(("E-mail = ") + alunosMatriculados.get(i).getEmail());
+            System.out.println(("Ano Escolar = ") + alunosMatriculados.get(i).getAnoEscolar());
+            System.out.println(("Status do Aluno = ") + alunosMatriculados.get(i).getStatusAluno());
         }
 
 
     }
-
 
     public void salvarDados(Aluno aluno) {
         alunosMatriculados.add(aluno);
@@ -77,7 +76,7 @@ public class AlunoController {
 
     }
 
-    }
+}
 
 
 
